@@ -120,7 +120,7 @@ Ensure GMP, MPFR, and MPC system libraries are installed prior to `gmpy2`.
 If you use this book or its code in your research or coursework, please cite:
 
 ```
-Moore, I. (2025). *DeFiPy: Python SDK for On-chain Analytics.*
+Moore, I. (2025). DeFiPy: Python SDK for On-chain Analytics.
 DeFiPy.org, Apache-2.0.
 ```
 
