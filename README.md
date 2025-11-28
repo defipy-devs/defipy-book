@@ -8,7 +8,7 @@
 
 ## 🧭 Overview
 
-This repository contains the **LaTeX source** and **build assets** for *The DeFiPy Book* which is a comprehensive technical reference for the `defipy` ecosystem.
+This repository contains the **Jupyter notebooks** for *The DeFiPy Book* which is a comprehensive technical reference for the `defipy` ecosystem.
 
 The book introduces:
 
