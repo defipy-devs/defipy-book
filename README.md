@@ -30,8 +30,7 @@ The book introduces:
 | [`balancerpy`](https://github.com/defipy-devs/balancerpy) | Balancer-style multi-asset pool invariants and weighting logic |
 | [`stableswappy`](https://github.com/defipy-devs/stableswappy) | Curve-style StableSwap invariant and slippage analysis |
 
-DeFiPy integrates seamlessly with **[`web3scout`](https://github.com/defipy-devs/web3scout)**, which is a lightweight extension of `web3.py` that provides efficient on-chain data fetching  
-and event monitoring for analytics pipelines.
+DeFiPy integrates seamlessly with **[`web3scout`](https://github.com/defipy-devs/web3scout)**, which is a lightweight extension of `web3.py` that provides efficient on-chain data fetching and event monitoring for analytics pipelines.
 
 ---
 
