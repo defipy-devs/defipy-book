@@ -47,32 +47,7 @@ defipy-book/
 └─ README.md                 # This file
 ```
 
-The full Jupyter notebook suite for all chapter examples lives in the  
-[**defipy-book-notebooks**](https://github.com/defipy-devs/defipy-book-notebooks) repository.
-
----
-
-## ⚙️ Installation and Build
-
-To build the book from source:
-
-```bash
-git clone https://github.com/defipy-devs/defipy-book.git
-cd defipy-book
-
-# Create environment
-conda env create -f env/environment.yml
-conda activate defipy-book
-
-# Build PDF
-make pdf
-```
-
-> **Note:** The build process assumes a full LaTeX distribution  
-> (e.g., TeX Live or MacTeX) with `latexmk` installed.
-
-For DeFiPy library installation and setup instructions, see Appendix A of the book  
-or visit the [DeFiPy documentation](https://defipy.org).
+The full Jupyter notebook suite for all chapter examples lives in the [**defipy-book-notebooks**](https://github.com/defipy-devs/defipy-book-notebooks) repository.
 
 ---
 
@@ -144,5 +119,5 @@ All examples, text, and notebooks are distributed on an “AS IS” basis, witho
 
 ---
 
-**© 2025 ngeodesic-ai / Ian Moore and contributors.**  
+**© 2025 defipy-devs / Ian Moore and contributors.**  
 Building open, deterministic analytics for decentralized finance.
