@@ -62,10 +62,18 @@ cd defipy-book/notebooks
 jupyter lab
 ```
 
-For on-chain examples, set your RPC endpoint:
+### Setting Your RPC Endpoint
+
+To run the on-chain examples in this repository, you’ll need a reliable Ethereum JSON-RPC endpoint. The easiest option is to create a free Infura account and generate a project endpoint. Infura provides HTTPS and WebSocket gateways to Ethereum (and other chains), and integrates seamlessly with Web3.py. 
+
+To set one up you can visit [infura](https://www.infura.io/); once you sign in:
+
+* Create a new Web3 project
+* Select Ethereum as the network
+* Copy your HTTPS endpoint, which will look like:
 
 ```bash
-export WEB3_RPC_URL="https://<provider>/<api-key>"
+https://mainnet.infura.io/v3/<YOUR_API_KEY>
 ```
 
 ---
