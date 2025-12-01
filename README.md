@@ -46,7 +46,7 @@ defipy-book/
 └─ README.md                 # This file
 ```
 
-The full Jupyter notebook suite for all chapter examples lives in the [**defipy-book-notebooks**](https://github.com/defipy-devs/defipy-book-notebooks) repository.
+The full Jupyter notebook suite for all chapter examples lives in the [**defipy-book/notebooks**](https://github.com/defipy-devs/defipy-book/tree/main/notebooks) repository.
 
 ---
 
