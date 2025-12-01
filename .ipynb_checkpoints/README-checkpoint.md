@@ -52,7 +52,7 @@ The full Jupyter notebook suite for all chapter examples lives in the [**defipy-
 
 ## 💻 Companion Notebooks
 
-All executable examples are provided as Jupyter notebooks (one per chapter) in the official [**defipy-book-notebooks**](https://github.com/defipy-devs/defipy-book-notebooks) repository.
+All executable examples are provided as Jupyter notebooks (one per chapter) in the official [**defipy-book/notebooks**](https://github.com/defipy-devs/defipy-book/tree/main/notebooks) repository.
 
 Each notebook reproduces the code listings from the text and can be run locally or in Colab. A simple clone command:
 
