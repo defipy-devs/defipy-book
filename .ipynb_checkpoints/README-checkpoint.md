@@ -64,9 +64,9 @@ jupyter lab
 
 ### Setting Your RPC Endpoint
 
-To run the on-chain examples in this repository, you’ll need a reliable Ethereum JSON-RPC endpoint. The easiest option is to create a free Infura account and generate a project endpoint. Infura provides HTTPS and WebSocket gateways to Ethereum (and other chains), and integrates seamlessly with Web3.py. 
+To run the on-chain examples in this repository, you’ll need a reliable Ethereum JSON-RPC endpoint. The easiest option is to create a free [Infura](https://www.infura.io/) account and generate a project endpoint. Infura provides HTTPS and WebSocket gateways to Ethereum (and other chains), and integrates seamlessly with Web3.py. 
 
-To set one up you can visit [infura](https://www.infura.io/); once you sign in:
+To set one up you can visit [Infura](https://www.infura.io/); once you sign in:
 
 * Create a new Web3 project
 * Select Ethereum as the network
