@@ -38,15 +38,12 @@ DeFiPy integrates seamlessly with **[`web3scout`](https://github.com/defipy-devs
 
 ```
 defipy-book/
-├─ notebooks/                # Code examples per chapter (lightweight versions)
-├─ env/                      # Environment and dependency files
-│  ├─ requirements.txt
-│  └─ environment.yml
+├─ notebooks/                # One Jupyter notebook per chapter (chapter1.ipynb … chapter9.ipynb)
 ├─ LICENSE                   # Apache 2.0 License
 └─ README.md                 # This file
 ```
 
-The full Jupyter notebook suite for all chapter examples lives in the [**defipy-book/notebooks**](https://github.com/defipy-devs/defipy-book/tree/main/notebooks) repository.
+The full Jupyter notebook suite for all chapter examples lives in the [**defipy-book/notebooks**](https://github.com/defipy-devs/defipy-book/tree/main/notebooks) directory.
 
 ---
 
@@ -54,13 +51,19 @@ The full Jupyter notebook suite for all chapter examples lives in the [**defipy-
 
 All executable examples are provided as Jupyter notebooks (one per chapter) in the official [**defipy-book/notebooks**](https://github.com/defipy-devs/defipy-book/tree/main/notebooks) repository.
 
-Each notebook reproduces the code listings from the text and can be run locally or in Colab. A simple clone command:
+Each notebook reproduces the code listings from the text and can be run locally or in Colab. After installing DeFiPy (see Installation below), clone the notebooks and launch JupyterLab:
 
 ```bash
+# Install DeFiPy with full book support (needed for chapter 9)
+pip install defipy[book] jupyterlab matplotlib
+
+# Clone notebooks and launch
 git clone https://github.com/defipy-devs/defipy-book.git
 cd defipy-book/notebooks
 jupyter lab
 ```
+
+> **Note:** Chapters 1–8 work with the core install (`pip install defipy`). Only chapter 9 (*Building Autonomous DeFi Agents*) requires the `[book]` extra, which pulls in `web3scout` for on-chain integration.
 
 ### Setting Your RPC Endpoint
 
@@ -78,21 +81,53 @@ https://mainnet.infura.io/v3/<YOUR_API_KEY>
 
 ---
 
-## 🧮 Dependencies
+## 🚀 Installation
 
-DeFiPy and its examples require Python 3.10 or later and the following core packages:
+DeFiPy is installed via pip. There are two install options depending on which chapters you plan to run.
 
-```
-defipy
-gmpy2
-pandas
-numpy
-matplotlib
-web3
-jupyterlab
+### Core install (chapters 1–8)
+
+For the mathematical, analytical, and simulation chapters — which use only DeFiPy's core packages (`uniswappy`, `balancerpy`, `stableswappy`):
+
+```bash
+pip install defipy
 ```
 
-Ensure GMP, MPFR, and MPC system libraries are installed prior to `gmpy2`.
+### Book install (all chapters, including chapter 9)
+
+Chapter 9 — *Building Autonomous DeFi Agents* — uses live chain integration via `web3scout`. To run these examples, install the `[book]` extra:
+
+```bash
+pip install defipy[book]
+```
+
+This adds `web3scout` on top of the core install, providing the chain event monitoring, ABI loading, and token-fetching utilities that chapter 9's agents require.
+
+### Python version
+
+DeFiPy requires **Python 3.10 or later**. Tested through Python 3.14.
+
+### System libraries for gmpy2
+
+`defipy` depends on `gmpy2` for high-precision arithmetic in StableSwap math. `gmpy2` requires the GMP, MPFR, and MPC system libraries to be installed *before* running `pip install`:
+
+**macOS (Homebrew):**
+```bash
+brew install gmp mpfr libmpc
+```
+
+**Linux (Debian / Ubuntu):**
+```bash
+sudo apt install libgmp-dev libmpfr-dev libmpc-dev
+```
+
+### Jupyter
+
+To run the notebooks you'll also need JupyterLab and a plotting library:
+
+```bash
+pip install jupyterlab matplotlib
+```
 
 ---
 
