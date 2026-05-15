@@ -85,23 +85,16 @@ https://mainnet.infura.io/v3/<YOUR_API_KEY>
 
 DeFiPy is installed via pip. There are two install options depending on which chapters you plan to run.
 
-### Core install (chapters 1–8)
 
-For the mathematical, analytical, and simulation chapters — which use only DeFiPy's core packages (`uniswappy`, `balancerpy`, `stableswappy`):
+### Book install 
 
-```bash
-pip install defipy
+For the mathematical, analytical, and simulation chapters — which use only DeFiPy's core packages (`uniswappy`, `balancerpy`, `stableswappy`). Chapter 9 of *Hands-On AMMs with Python* — *Building Autonomous DeFi Agents* — uses live chain integration via `web3scout`. To run those examples, install the `[book]` extra:
+
+```
+> pip install 'defipy[book]'
 ```
 
-### Book install (all chapters, including chapter 9)
-
-Chapter 9 — *Building Autonomous DeFi Agents* — uses live chain integration via `web3scout`. To run these examples, install the `[book]` extra:
-
-```bash
-pip install defipy[book]
-```
-
-This adds `web3scout` on top of the core install, providing the chain event monitoring, ABI loading, and token-fetching utilities that chapter 9's agents require.
+The `[book]` extra carries the same package set as `[chain]` (`web3scout` + `web3`). The split is intent-based — `[chain]` signals production live-state reads via LiveProvider; `[book]` signals textbook chapter 9 use. Either works for either purpose.
 
 ### Python version
 
